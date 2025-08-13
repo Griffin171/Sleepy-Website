@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>sleepy — Official Stream Site</title>
+  <meta name="description" content="I am Sleepy — streamer and content creator. Live on Twitch, clips, schedule, and socials." />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Favicons (optional) -->
+  <!-- <link rel="icon" href="favicon.ico"> -->
+
+  <!-- Preload fonts (none by default; using system fonts) -->
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="branding">
+        <!-- Replace these placeholders later -->
+        <div class="avatar" aria-hidden="true"></div>
+        <div class="brand-text">
+          <h1 class="brand-name">I am Sleepy</h1>
+          <p class="brand-tagline">Streamer • Content Creator</p>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Primary">
+        <button id="themeToggle" class="btn ghost" aria-label="Toggle color theme">Dark/Light</button>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#live" class="nav-link">Live</a>
+        <a href="#clips" class="nav-link">Clips</a>
+        <a href="#schedule" class="nav-link">Schedule</a>
+        <a href="#socials" class="nav-link">Socials</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="hero" class="section hero">
+      <div class="container grid-2">
+        <div class="hero-text reveal">
+          <h2>Welcome to <span class="accent">Sleepy</span>’s world</h2>
+          <p>
+            Hey! I’m <strong>Sleepy</strong>. I stream cozy gameplay, high-energy moments, and everything in between.
+            Catch me live on <strong>Twitch</strong> and short-form on <strong>TikTok</strong>. Stay comfy, stay sleepy.
+          </p>
+          <div class="buttons-row">
+            <a class="btn hero-social-btn" href="https://twitch.tv/sleepy321_" target="_blank" rel="noopener noreferrer">
+              <!-- Twitch SVG -->
+              <svg viewBox="0 0 24 24" aria-hidden="true" style="width:18px;height:18px;vertical-align:middle;"><path fill="currentColor" d="M4 3h16v11l-4 4h-4l-2 2H8v-2H4V3zm2 2v10h4v2h1.172L12.586 15H17l1-1V5H6zm8 2h2v5h-2V7zm-4 0h2v5H10V7z"/></svg>
+              Twitch
+            </a>
+            <a class="btn hero-social-btn" href="https://www.tiktok.com/@yourhandle" target="_blank" rel="noopener noreferrer">
+              <!-- TikTok SVG -->
+              <svg viewBox="0 0 24 24" aria-hidden="true" style="width:18px;height:18px;vertical-align:middle;"><path fill="currentColor" d="M13.5 3c.4 2.2 2 3.9 4.2 4.3v2.7c-1.1-.1-2.2-.4-3.2-.9v5.5c0 3-2.4 5.4-5.4 5.4S3.7 17.6 3.7 14.6c0-3 2.4-5.4 5.4-5.4.4 0 .7 0 1 .1V11c-.3-.1-.6-.1-1-.1-1.9 0-3.4 1.5-3.4 3.4s1.5 3.4 3.4 3.4 3.4-1.5 3.4-3.4V3h1.6z"/></svg>
+              TikTok
+            </a>
+          </div>
+        </div>
+        <div class="hero-media reveal">
+          <!-- Placeholder banner area; replace via CSS background in .hero-media or add an <img> if you prefer -->
+          <div class="banner-placeholder" role="img" aria-label="Streamer banner placeholder"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container narrow reveal">
+        <h3>About Sleepy</h3>
+        <p>
+          I’m Sleepy — a variety streamer who loves community vibes, skillful plays, and scuffed laughs.
+          This site is your hub for live streams, highlight clips, schedule, and all my links.
+        </p>
+      </div>
+    </section>
+
+    <!-- Live (Twitch player + chat) -->
+    <section id="live" class="section alt">
+      <div class="container reveal">
+        <h3>Live on Twitch</h3>
+        <p class="muted">If I’m online, hit play and pop out the chat. If I’m offline, feel free to browse the clips below.</p>
+        <div class="live-embed">
+          <div class="live-player">
+            <!-- Twitch player will have its src set via JS to include the correct parent=hostname -->
+            <iframe
+              id="twitchPlayer"
+              title="Twitch Player"
+              allowfullscreen
+              loading="lazy"
+              frameborder="0">
+            </iframe>
+            <div class="live-channel-link">
+              <a class="btn" href="https://twitch.tv/sleepy321_" target="_blank" rel="noopener noreferrer">
+                Ver canal completo no Twitch
+              </a>
+            </div>
+          </div>
+          <div class="live-chat">
+            <iframe
+              id="twitchChat"
+              title="Twitch Chat"
+              loading="lazy"
+              frameborder="0">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clips & Highlights -->
+    <section id="clips" class="section">
+      <div class="container reveal">
+        <h3>Clips & Highlights</h3>
+        <p class="muted">A few featured clips. Replace these URLs later in <code>script.js</code>.</p>
+        <div id="clipsGrid" class="clips-grid"><!-- filled by JS --></div>
+      </div>
+    </section>
+
+    <!-- Schedule -->
+    <section id="schedule" class="section alt">
+      <div class="container narrow reveal">
+        <h3>Stream Schedule</h3>
+        <p class="muted">
+          One fixed time, automatically shown in <strong>your local timezone</strong>.
+        </p>
+        <div class="schedule-card" role="group" aria-labelledby="scheduleTitle">
+          <div class="schedule-row">
+            <span class="label">Base time (UTC):</span>
+            <span id="utcTime" class="value">—</span>
+          </div>
+          <div class="schedule-row">
+            <span class="label">Your local time:</span>
+            <span id="localTime" class="value">—</span>
+          </div>
+          <div class="schedule-row">
+            <span class="label">Days:</span>
+            <span id="scheduleDays" class="value">Mon • Wed • Fri</span>
+          </div>
+        </div>
+        <small class="muted">Edit the days/time in <code>script.js</code> under <strong>CONFIG.SCHEDULE</strong>.</small>
+      </div>
+    </section>
+
+    <!-- Social Hub -->
+    <section id="socials" class="section">
+      <div class="container reveal">
+        <h3>Social Hub</h3>
+        <p class="muted">Add or remove links in <code>script.js</code> and the style will match automatically.</p>
+        <div id="socialHub" class="social-grid"><!-- filled by JS --></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> sleepy</span>
+      <span class="muted">Built with HTML • CSS • JS</span>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -17,7 +17,7 @@ const CONFIG = {
     // Replace these with your own embeddable URLs.
     // YouTube examples:
     {
-      title: "Insane clutch (example)",
+      title: "Fun Pattern",
       url: "https://vm.tiktok.com/ZMAjEAuHs/"
     },
     {
@@ -25,7 +25,7 @@ const CONFIG = {
       url: "https://www.youtube.com/watch?v=xNNlWBqaJxA&ab_channel=sleepypigeon"
     },
     {
-      title: "Clean outplay (example)",
+      title: "W Map",
       url: "https://vm.tiktok.com/ZMAjEV9fg"
     }
     // Twitch clip support is included too — just supply a Twitch clip URL:
@@ -285,6 +285,7 @@ function getIconSVG(name) {
   };
   return icons[name] || icons.globe;
 }
+
 
 
 

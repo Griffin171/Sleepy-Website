@@ -9,7 +9,7 @@ const CONFIG = {
   },
 
   TWITCH: {
-    channel: "sleepy321_",
+    channel: "sleepypigeon_",
     // parent is set dynamically from window.location.hostname for GitHub Pages, etc.
   },
 
@@ -42,17 +42,17 @@ const CONFIG = {
 
   SOCIALS_PRIMARY: [
     // Shown as hero buttons
-    { label: "Twitch", url: "https://twitch.tv/sleepy321_", icon: "twitch" },
-    { label: "TikTok", url: "https://www.tiktok.com/@yourhandle", icon: "tiktok" }
+    { label: "Twitch", url: "https://twitch.tv/sleepypigeon_", icon: "twitch" },
+    { label: "TikTok", url: "https://www.tiktok.com/@iamsleepyosu", icon: "tiktok" }
   ],
 
   SOCIALS: [
     // Social Hub grid — add/remove freely. New items inherit style automatically.
-    { label: "Twitch", url: "https://twitch.tv/sleepy321_", icon: "twitch" },
-    { label: "TikTok", url: "https://www.tiktok.com/@yourhandle", icon: "tiktok" },
-    { label: "YouTube", url: "https://youtube.com/@yourhandle", icon: "youtube" },
-    { label: "Twitter/X", url: "https://twitter.com/yourhandle", icon: "twitter" },
-    { label: "Instagram", url: "https://instagram.com/yourhandle", icon: "instagram" },
+    { label: "Twitch", url: "https://twitch.tv/sleepypigeon", icon: "twitch" },
+    { label: "TikTok", url: "https://www.tiktok.com/@iamsleepyosu", icon: "tiktok" },
+    { label: "YouTube", url: "https://youtube.com/@sleepypigeonfn", icon: "youtube" },
+    { label: "Twitter/X", url: "https://twitter.com/sleepypigeon11", icon: "twitter" },
+    { label: "Instagram", url: "https://instagram.com/iamsleepy24.7", icon: "instagram" },
     { label: "Discord", url: "https://discord.gg/yourinvite", icon: "discord" }
   ]
 };
@@ -285,3 +285,4 @@ function getIconSVG(name) {
   };
   return icons[name] || icons.globe;
 }
+

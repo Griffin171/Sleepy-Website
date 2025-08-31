@@ -21,7 +21,7 @@ const CONFIG = {
       url: "https://vm.tiktok.com/ZMAjEAuHs/"
     },
     {
-      title: "Funny moment (example)",
+      title: "REHAB",
       url: "https://www.youtube.com/watch?v=xNNlWBqaJxA&ab_channel=sleepypigeon"
     },
     {
@@ -285,5 +285,6 @@ function getIconSVG(name) {
   };
   return icons[name] || icons.globe;
 }
+
 
 

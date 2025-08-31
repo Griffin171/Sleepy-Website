@@ -18,11 +18,11 @@ const CONFIG = {
     // YouTube examples:
     {
       title: "Insane clutch (example)",
-      url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      url: "https://vm.tiktok.com/ZMAjEAuHs/"
     },
     {
       title: "Funny moment (example)",
-      url: "https://www.youtube.com/watch?v=o-YBDTqX_ZU"
+      url: "https://www.youtube.com/watch?v=xNNlWBqaJxA&ab_channel=sleepypigeon"
     },
     {
       title: "Clean outplay (example)",
@@ -285,4 +285,5 @@ function getIconSVG(name) {
   };
   return icons[name] || icons.globe;
 }
+
 

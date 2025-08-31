@@ -26,7 +26,7 @@ const CONFIG = {
     },
     {
       title: "Clean outplay (example)",
-      url: "https://www.youtube.com/watch?v=aqz-KE-bpKQ"
+      url: "https://vm.tiktok.com/ZMAjEV9fg"
     }
     // Twitch clip support is included too — just supply a Twitch clip URL:
     // { title: "Twitch clip", url: "https://clips.twitch.tv/IncrediblePluckyVelociraptorHeyGuys" }
@@ -285,6 +285,7 @@ function getIconSVG(name) {
   };
   return icons[name] || icons.globe;
 }
+
 
 
 
